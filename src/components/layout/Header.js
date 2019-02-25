@@ -9,7 +9,7 @@ export default function Header() {
         </h1>
 
         {/* navigation */}
-        <Link to="/" style={ linkStyle } >Home</Link> | <Link to="/about" style={ linkStyle } >About</Link>
+        <Link to="/" style={ linkStyle } >Home</Link> | <Link to="/about" style={ linkStyle } >About</Link> | <Link to="/contact" style={ linkStyle } >Contact</Link>
     </div>
   )
 }

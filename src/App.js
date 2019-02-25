@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 import Todo from './components/Todo';
 import AddTodo from './components/AddTodo';
 import Header from './components/layout/Header';
@@ -36,6 +37,11 @@ class App extends Component {
         {
           id: uuid.v4(),          
           title: 'check tutorial for revision',
+          completed: false
+        },
+        {
+          id: uuid.v4(),          
+          title: 'deposit RM10.00',
           completed: false
         }
       ]
@@ -88,6 +94,8 @@ class App extends Component {
               )} />
               
               <Route path="/about" component={ About } />
+
+              <Route path="/contact" component={ Contact } />
           </div>
         </Router>
       );
