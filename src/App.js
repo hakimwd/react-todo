@@ -71,12 +71,9 @@ class App extends Component {
 
     
     removeTodo = (id) => {
-      this.setState({ todos: [...this.state.todos].filter((todo) => {
-        if (todo.id === id) { 
-          return; 
-        } 
-        return todo;
-        }) 
+      this.setState({ todos: [...this.state.todos].filter(todo => 
+        todo.id !== id
+        ) 
       });
     }
 
